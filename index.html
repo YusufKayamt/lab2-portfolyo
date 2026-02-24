@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Mete Kaya - Kişisel Portfolyo</title>
+    <style>
+        /* Genel sıfırlama */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: system-ui, sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Skip link: normalde gizli, Tab ile görünür */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            background: #1E3A8A;
+            color: white;
+            padding: 8px 16px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        .skip-link:focus { top: 0; }
+        
+        /* Focus göstergesi ASLA kaldırma */
+        :focus { outline: 2px solid #2563EB; outline-offset: 2px; }
+        
+        /* Sayfa Düzeni ve Ara Boşluklar */
+        header { background: #f8f9fa; padding: 1.5rem; text-align: center; border-bottom: 1px solid #ddd; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem; }
+        nav a { text-decoration: none; color: #1E3A8A; font-weight: bold; }
+        main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        section { margin-bottom: 3rem; }
+        article { background: #f8f9fa; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; }
+        h1, h2, h3 { color: #1E3A8A; margin-bottom: 0.5rem; }
+        ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        figure { margin-bottom: 1rem; text-align: center; }
+        img { max-width: 100%; border-radius: 4px; }
+        
+        /* Form stilleri */
+        .form-group { margin-bottom: 1rem; }
+        label { display: block; margin-bottom: 0.25rem; font-weight: bold; }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .error-msg { color: red; font-size: 0.85rem; display: block; margin-top: 0.25rem; }
+        button { background: #1E3A8A; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #152b66; }
+        
+        footer { text-align: center; padding: 2rem; background: #f8f9fa; border-top: 1px solid #ddd; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+
+    <header>
+        <h1>Yusuf Mete Kaya - Kişisel Portfolyo</h1>
+        <nav aria-label="Ana navigasyon">
+            <ul>
+                <li><a href="#hakkimda">Hakkımda</a></li>
+                <li><a href="#projeler">Projeler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        
+        <section id="hakkimda">
+            <h2>Hakkımda</h2>
+            <figure>
+                <img src="profil.jpg" alt="Yusuf Mete Kaya'nın vesikalık fotoğrafı" />
+                <figcaption>Yusuf Mete Kaya</figcaption>
+            </figure>
+            <p>Fırat Üniversitesi'nde 3. sınıf Yazılım Mühendisliği öğrencisiyim. Yazılım geliştirme, yapay zeka ve siber güvenlik alanlarına odaklanarak teknoloji üretmeyi seviyorum. Kariyerimin yanında edebiyat ve müzikle yakından ilgileniyor; Anadolu Rock grubu NEFRES'in kuruculuğunu ve yöneticiliğini yapıyorum. Ayrıca "Fecir Vakti" isimli bir şiir kitabı hazırlığındayım.</p>
+            
+            <h3>Kullandığım Teknolojiler</h3>
+            <ul>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Laravel (Sanctum)</li>
+                <li>Axios</li>
+                <li>Arduino</li>
+            </ul>
+        </section>
+
+        <section id="projeler">
+            <h2>Projelerim</h2>
+            
+            <article>
+                <h3>BlockSentinelAI</h3>
+                <p>CAN-Bus ağlarındaki siber saldırıları tespit etmeye yönelik geliştirdiğim ağ güvenliği ve yapay zeka entegrasyonlu yazılım projesi.</p>
+                <p><strong>Teknolojiler:</strong> Yapay Zeka, Ağ Güvenliği</p>
+            </article>
+
+            <article>
+                <h3>DreamToon</h3>
+                <p>Kullanıcıların rüyalarını yapay zeka destekli animasyonlara dönüştüren web tabanlı uygulama.</p>
+                <p><strong>Teknolojiler:</strong> Laravel (Sanctum), Axios</p>
+            </article>
+
+            <article>
+                <h3>TEKNOFEST 2023 3.'lük Projesi</h3>
+                <p>TEKNOFEST 2023 yarışmasında 3.lük elde eden projede back-end yazılım lideri olarak sistem mimarisinin kurulması ve geliştirilmesi görevlerini üstlendim.</p>
+            </article>
+        </section>
+
+        <section id="iletisim">
+            <h2>İletişim</h2>
+            <form action="#" method="POST" novalidate>
+                <fieldset>
+                    <legend>İletişim Formu</legend>
+                    
+                    <div class="form-group">
+                        <label for="name">Ad Soyad: </label>
+                        <input type="text" id="name" name="name" required minlength="2" aria-describedby="name-error" />
+                        <small id="name-error" class="error-msg" role="alert"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-posta: </label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error" />
+                        <small id="email-error" class="error-msg" role="alert"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Konu: </label>
+                        <select id="subject" name="subject" required aria-describedby="subject-error">
+                            <option value="">-- Seçiniz --</option>
+                            <option value="staj">Staj Başvurusu / İş Teklifi</option>
+                            <option value="proje">Proje & Yazılım Geliştirme</option>
+                            <option value="konser">NEFRES Konser Organizasyonu</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                        <small id="subject-error" class="error-msg" role="alert"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajınız:</label>
+                        <textarea id="message" name="message" rows="5" required minlength="10" aria-describedby="message-error"></textarea>
+                        <small id="message-error" class="error-msg" role="alert"></small>
+                    </div>
+
+                    <button type="submit">Gönder</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yusuf Mete Kaya. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
