@@ -1,53 +1,64 @@
-# Web Tasarımı ve Programlama — Kişisel Portföy (LAB-2)
+# 🌌 Yusuf Mete Kaya | Web Engineering Portfolio
 
-## 📌 Hakkında
-Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında hazırlanan laboratuvar çalışmalarının ikinci aşamasını (LAB-2) temsil etmektedir. Temel odak noktası; **Semantik HTML5** mimarisi, yüksek **Erişilebilirlik (a11y)** standartları ve arama motoru optimizasyonuna (SEO) uygun bir iskelet oluşturmaktır.
-
-## 👨‍💻 Geliştirici
-* **Ad Soyad:** Yusuf Mete Kaya
-* **Bölüm:** Yazılım Mühendisliği (3. Sınıf)
-* **Üniversite:** Fırat Üniversitesi
-* **Başarılar:** **TEKNOFEST 2023 Türkiye 3.sü** (Turizm Asistanlığı Projesi - Back-end Yazılım Lideri)
-
-## 🛠️ Kullanılan Teknolojiler
-* **Vite** - Modern Frontend Tooling
-* **Semantik HTML5** - Anlamsal web yapısı
-* **Modern CSS** - Layout ve tasarım temelleri
-* **Git** - Versiyon kontrol sistemi
-
-## 📅 Lab Geçmişi
-| Lab | Branch | Konu |
-| :--- | :--- | :--- |
-| **LAB-1** | `main` | Vite proje kurulumu ve temel yapılandırma. |
-| **LAB-2** | `feature/semantic-html` | Semantik HTML5, Erişilebilirlik (ARIA), Form yapısı ve Lighthouse testleri. |
-
-## 🌟 Öne Çıkan Özellikler (LAB-2 Fokus)
-
-### 1. Semantik HTML & SEO
-* **Yapısal Etiketler:** `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` ve `<footer>` etiketleri ile hiyerarşik bir doküman yapısı kuruldu.
-* **Başlık Düzeni:** SEO uyumluluğu için tek bir `<h1>` ve mantıksal sırayla takip eden `<h2>`, `<h3>` başlıkları kullanıldı.
-
-### 2. Erişilebilirlik (A11Y)
-* **Skip Link:** Klavye kullanıcıları için menüyü atlayıp doğrudan içeriğe odaklanmayı sağlayan "Ana içeriğe atla" butonu eklendi.
-* **ARIA & Etiketleme:** Ekran okuyucular için `aria-label`, `aria-describedby` ve `role` öznitelikleri ile tam uyumluluk sağlandı.
-* **Görsel Yönetimi:** Tüm görseller için anlamlı `alt` metinleri tanımlandı.
-
-### 3. İletişim Formu
-* **Erişilebilir Form:** `label/for-id` bağlantıları, `fieldset` ve `legend` gruplandırmaları ile kullanıcı dostu form yapısı.
-* **HTML5 Doğrulama:** Tarayıcı tabanlı form validasyonları.
-
-## 🚀 Önemli Projeler
-* **Turizm Asistanlığı (TEKNOFEST 3.lük Ödülü):** Back-end Yazılım Lideri olarak yer aldığım, sistem mimarisini kurguladığım ödüllü proje.
-* **BlockSentinelAI:** CAN-Bus ağları için geliştirdiğim siber güvenlik odaklı anomali tespit projesi.
-
-## 📊 Lighthouse Puanı (LAB-2)
-Proje, Google Lighthouse standartlarında en yüksek puanları hedeflemiştir:
-
-| Kategori | Puan | Durum |
-| :--- | :--- | :--- |
-| ♿ **Erişilebilirlik (Accessibility)** | **100 / 100** | ✅ Tamamlandı |
-| 🏆 **En İyi Uygulamalar (Best Practices)** | **100 / 100** | ✅ Tamamlandı |
-| 🔍 **SEO** | **100 / 100** | ✅ Tamamlandı |
+<div align="center">
+  <img src="https://img.shields.io/badge/Fırat_Üniversitesi-Yazılım_Mühendisliği-blue?style=for-the-badge&logo=university" alt="University">
+  <img src="https://img.shields.io/badge/Achievement-TEKNOFEST_3rd_Place-gold?style=for-the-badge&logo=target" alt="Achievement">
+  <img src="https://img.shields.io/badge/Role-Back--end_Lead-red?style=for-the-badge" alt="Role">
+</div>
 
 ---
-*Yazılım disiplinini sanatla harmanlıyorum. **NEFRES** grubunun kurucusu ve **Fecir Vakti** şiir kitabının yazarıyım.*
+
+## 🏛️ Portfolyo Mimarisi Hakkında
+Bu çalışma, **Fırat Üniversitesi Yazılım Mühendisliği** müfredatındaki "Web Tasarımı ve Programlama" dersi için geliştirilen bir gelişim günlüğüdür. Proje; sadece bir web sitesi değil, **Mobile-First** stratejisi, **Design Tokens** mimarisi ve yüksek **Erişilebilirlik (a11y)** standartlarıyla inşa edilmiş profesyonel bir mühendislik dökümüdür.
+
+## 👨‍🔬 Mühendislik Profili
+* **İsim:** Yusuf Mete Kaya
+* **Ünvan:** Yazılım Mühendisi Adayı | Back-end Yazılım Lideri
+* **Başarı:** **TEKNOFEST 2023 Türkiye 3.lüğü** (Ödüllü Turizm Asistanlığı projesinde Back-end mimarisini kurguladım)
+* **Odak:** Yapay Zeka (YOLOv8), Siber Güvenlik (CAN-Bus) ve Modern Web Sistemleri
+
+---
+
+## 🧪 Haftalık Gelişim Kayıtları (LAB Log)
+
+### 🗓️ LAB-1: Temeller ve Ortam Kurulumu
+* **Vite Framework:** Modern ve hızlı bir derleme süreci için proje Vite ile ayağa kaldırıldı.
+* **Mimari Yapı:** Mühendislik standartlarına uygun klasörleme (`src/styles`, `public`, `screenshots`) hiyerarşisi oluşturuldu.
+
+### ♿ LAB-2: Semantik Web & Kapsayıcı Tasarım
+* **Semantik HTML5:** `<main>`, `<nav>`, `<section>` gibi anlamsal etiketlerle SEO uyumlu iskelet.
+* **Erişilebilirlik (a11y):** ARIA etiketleri ve Skip Link entegrasyonu ile en üst düzey erişim desteği.
+* **Doğrulama:** Kullanıcı deneyimini önleyen hataları minimize eden, HTML5 tabanlı akıllı form yapıları.
+* **Skor:** **Lighthouse: 100/100** (Erişilebilirlik & Best Practices) ✅
+
+### 🎨 LAB-3: Responsive Dizayn & Tasarım Sistemi
+* **Design Tokens:** Tüm tasarım dili (renk, font, boşluk) `tokens.css` içinde merkezi değişkenlere (`--var`) bağlandı.
+* **Fluid Layout:** `clamp()` fonksiyonuyla ekran boyutuna göre otomatik ölçeklenen akıcı tipografi.
+* **Akıllı Izgara (Grid):** `auto-fit` mimarisiyle sıfır media-query yüküyle çalışan 3-kademeli (Mobil, Tablet, Masaüstü) responsive kart düzeni.
+* **Belgelendirme:** Tasarım sırasında alınan kritik kararlar `CSS-KARARLARI.md` içinde teknik olarak raporlandı.
+
+---
+
+## 🛠️ Teknik Envanter
+* **Frontend Core:** HTML5, Modern CSS3, Vite
+* **İleri Seviye Yetkinlik:** Python (AI & Data Science), C#, Laravel, Arduino
+
+
+
+## 📂 Git & Yazılım Yaşam Döngüsü
+Bu proje, profesyonel **Git Workflow** standartları gözetilerek yürütülmüştür:
+1.  **Modüler Geliştirme:** Her lab aşaması için (`feature/semantic-html`, `feature/responsive-layout`) özel dallar açıldı.
+2.  **Sürüm Kontrolü:** Teknik derinliği olan commit mesajları ile süreç kayıt altına alındı.
+3.  **Entegrasyon:** Başarıyla tamamlanan her özellik ana dala güvenli bir şekilde birleştirildi.
+
+---
+
+## 🎸 Sanat ve Estetik
+Kodun soğuk mantığını sanatın sıcaklığıyla dengeliyorum:
+* **NEFRES:** Kurucusu olduğum Anadolu Rock grubunun yöneticiliğini yapıyorum.
+* **Fecir Vakti:** Kendi şiirlerimden oluşan ve yakında yayınlanacak olan ilk kitabım.
+
+---
+<div align="center">
+  <i>"Geleceği kodlarken, geçmişin ezgilerini unutmuyoruz."</i>
+</div>
