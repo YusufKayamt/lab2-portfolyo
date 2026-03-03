@@ -1,37 +1,53 @@
-# 🚀 Yusuf Mete Kaya | Web Programlama Laboratuvar Günlüğü & Portfolyo
+# Web Tasarımı ve Programlama — Kişisel Portföy (LAB-2)
 
-Merhaba! Ben Yusuf Mete Kaya, Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim. 
+## 📌 Hakkında
+Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında hazırlanan laboratuvar çalışmalarının ikinci aşamasını (LAB-2) temsil etmektedir. Temel odak noktası; **Semantik HTML5** mimarisi, yüksek **Erişilebilirlik (a11y)** standartları ve arama motoru optimizasyonuna (SEO) uygun bir iskelet oluşturmaktır.
 
-Bu depo, "Web Tasarımı ve Programlama" dersi kapsamında adım adım (LAB-1, LAB-2, LAB-3) geliştirdiğim kişisel portfolyo projemi içermektedir. Vite ortamında sıfırdan inşa edilen bu site, modern web standartlarını (Semantik HTML, A11Y, Design Tokens, CSS Grid/Flex) merkeze alarak tasarlanmıştır.
+## 👨‍💻 Geliştirici
+* **Ad Soyad:** Yusuf Mete Kaya
+* **Bölüm:** Yazılım Mühendisliği (3. Sınıf)
+* **Üniversite:** Fırat Üniversitesi
+* **Başarılar:** **TEKNOFEST 2023 Türkiye 3.sü** (Turizm Asistanlığı Projesi - Back-end Yazılım Lideri)
+
+## 🛠️ Kullanılan Teknolojiler
+* **Vite** - Modern Frontend Tooling
+* **Semantik HTML5** - Anlamsal web yapısı
+* **Modern CSS** - Layout ve tasarım temelleri
+* **Git** - Versiyon kontrol sistemi
+
+## 📅 Lab Geçmişi
+| Lab | Branch | Konu |
+| :--- | :--- | :--- |
+| **LAB-1** | `main` | Vite proje kurulumu ve temel yapılandırma. |
+| **LAB-2** | `feature/semantic-html` | Semantik HTML5, Erişilebilirlik (ARIA), Form yapısı ve Lighthouse testleri. |
+
+## 🌟 Öne Çıkan Özellikler (LAB-2 Fokus)
+
+### 1. Semantik HTML & SEO
+* **Yapısal Etiketler:** `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` ve `<footer>` etiketleri ile hiyerarşik bir doküman yapısı kuruldu.
+* **Başlık Düzeni:** SEO uyumluluğu için tek bir `<h1>` ve mantıksal sırayla takip eden `<h2>`, `<h3>` başlıkları kullanıldı.
+
+### 2. Erişilebilirlik (A11Y)
+* **Skip Link:** Klavye kullanıcıları için menüyü atlayıp doğrudan içeriğe odaklanmayı sağlayan "Ana içeriğe atla" butonu eklendi.
+* **ARIA & Etiketleme:** Ekran okuyucular için `aria-label`, `aria-describedby` ve `role` öznitelikleri ile tam uyumluluk sağlandı.
+* **Görsel Yönetimi:** Tüm görseller için anlamlı `alt` metinleri tanımlandı.
+
+### 3. İletişim Formu
+* **Erişilebilir Form:** `label/for-id` bağlantıları, `fieldset` ve `legend` gruplandırmaları ile kullanıcı dostu form yapısı.
+* **HTML5 Doğrulama:** Tarayıcı tabanlı form validasyonları.
+
+## 🚀 Önemli Projeler
+* **Turizm Asistanlığı (TEKNOFEST 3.lük Ödülü):** Back-end Yazılım Lideri olarak yer aldığım, sistem mimarisini kurguladığım ödüllü proje.
+* **BlockSentinelAI:** CAN-Bus ağları için geliştirdiğim siber güvenlik odaklı anomali tespit projesi.
+
+## 📊 Lighthouse Puanı (LAB-2)
+Proje, Google Lighthouse standartlarında en yüksek puanları hedeflemiştir:
+
+| Kategori | Puan | Durum |
+| :--- | :--- | :--- |
+| ♿ **Erişilebilirlik (Accessibility)** | **100 / 100** | ✅ Tamamlandı |
+| 🏆 **En İyi Uygulamalar (Best Practices)** | **100 / 100** | ✅ Tamamlandı |
+| 🔍 **SEO** | **100 / 100** | ✅ Tamamlandı |
 
 ---
-
-## 🏗️ Geliştirme Süreci ve Branşlar (Lab Aşamaları)
-
-Proje, Git iş akışına uygun olarak farklı branch'ler (dallar) üzerinden aşama aşama inşa edilmiştir:
-
-* 🌱 **Faz 1 (`main`):** Vite altyapısının kurulması, proje mimarisinin oluşturulması ve temel dosyaların yapılandırılması.
-* ♿ **Faz 2 (`feature/semantic-html`):** İşin iskeleti. Sadece `<div>` kullanmak yerine `<main>`, `<article>`, `<nav>` gibi semantik HTML5 etiketleri entegre edildi. Ekran okuyucular için ARIA nitelikleri (`aria-label`, vb.), gizli "Skip link" (ana içeriğe atla) özelliği ve tam erişilebilir, erişim ağacı kusursuz form yapıları kuruldu. Lighthouse erişilebilirlik testlerinden %100 tam puan alındı.
-* 🎨 **Faz 3 (`feature/responsive-layout`):** Tasarımın canlanması. Herhangi bir hazır kütüphane kullanılmadan, saf CSS ile Mobile-First (Önce Mobil) yaklaşımı uygulandı. 
-
-## 🛠️ Mimari ve Teknik Yaklaşımlar
-
-Projenin arayüz mimarisi şu modern CSS prensiplerine dayanır:
-
-1.  **Design Tokens Modeli:** Renk paletleri, boşluk (spacing) skalaları, border-radius ve gölge değerleri `tokens.css` içerisinde CSS Variables (`--var`) olarak merkezi sisteme bağlandı.
-2.  **Akıcı Tipografi (Fluid Typography):** Cihaz boyutuna göre kendiliğinden büyüyüp küçülen `clamp()` fonksiyonları sayesinde media-query yazma zorunluluğu ortadan kaldırıldı.
-3.  **Akıllı Layout (Grid & Flexbox):** Menülerde `flex-direction` ile cihaz yönelimine göre esneyen yapılar kullanılırken, proje kartlarında `repeat(auto-fit, minmax(...))` formülüyle kendi kendini dizen akıllı Grid sistemi uygulandı.
-4.  **Responsive Strateji:** Mobil (0–639px), Tablet (640px+) ve Masaüstü (1024px+) olmak üzere 3 farklı kırılım noktası kullanıldı. Tasarım esnasında alınan tüm kritik kararlar `CSS-KARARLARI.md` dosyasında belgelendi. Uygulamanın farklı cihazlardaki görünümleri `screenshots/` klasörüne eklendi.
-
----
-
-## 💻 Benim Dünyam: Öne Çıkan Projeler & Yetkinlikler
-
-Siber güvenlik, yapay zeka, gömülü sistemler ve web geliştirme ekseninde (C#, Python, Laravel, Axios, Arduino) teknolojiler üretiyorum. Üzerinde çalıştığım başlıca projelerim:
-
-* 🛡️ **BlockSentinelAI:** CAN-Bus ağlarındaki siber saldırıları tespit etmeye yönelik geliştirdiğim, yapay zeka entegrasyonlu siber güvenlik yazılımı.
-* 🌌 **DreamToon:** Kullanıcıların rüyalarını yapay zeka destekli animasyonlara dönüştüren yenilikçi web platformu.
-
-## 🎸 Kodların Ötesinde
-
-Sadece ekrana bakarak kod yazmıyor, sanatı da hayatımın bir parçası olarak görüyorum. Lise yıllarımdan bu yana kaleme aldığım şiirlerimi **"Fecir Vakti"** isimli kitabımda topluyorum. Ayrıca gümbür gümbür sahne alan Anadolu rock grubu **NEFRES**'in kurucusu ve yöneticisiyim. Müzik ve edebiyat, yazılım projelerime ilham vermeye devam ediyor.
+*Yazılım disiplinini sanatla harmanlıyorum. **NEFRES** grubunun kurucusu ve **Fecir Vakti** şiir kitabının yazarıyım.*
