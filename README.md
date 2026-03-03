@@ -1,58 +1,37 @@
-# Web Tasarımı ve Programlama — Kişisel Portföy
+# 🚀 Yusuf Mete Kaya | Web Programlama Laboratuvar Günlüğü & Portfolyo
 
-## Hakkında
-Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında LAB-1, LAB-2 ve LAB-3 ödevleri olarak hazırlanmıştır. Vite ortamında sıfırdan oluşturulmuş; semantik HTML5, erişilebilirlik (a11y) standartlarına tam uyumlu ve CSS Design Tokens kullanılarak inşa edilmiş %100 responsive bir kişisel portföy sayfasıdır.
+Merhaba! Ben Yusuf Mete Kaya, Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim. 
 
-## Geliştirici
-* **Ad Soyad:** Yusuf Mete Kaya
-* **Eğitim:** Fırat Üniversitesi - Yazılım Mühendisliği (3. Sınıf)
-* **Odak Alanları:** Siber Güvenlik, Yapay Zeka, Web Geliştirme, Gömülü Sistemler
-
-## Kullanılan Teknolojiler
-* **Geliştirme Ortamı:** Vite, Node.js
-* **Frontend:** Semantik HTML5, Modern CSS3 (Flexbox, CSS Grid, Custom Properties)
-* **Genel Yetkinliklerim:** C#, Python, Laravel, Axios, Arduino
-
-## Lab Geçmişi
-| Lab | Branch | Konu |
-| :--- | :--- | :--- |
-| **LAB-1** | `main` | Vite proje kurulumu ve temel yapılandırma |
-| **LAB-2** | `feature/semantic-html` | Semantik HTML5, erişilebilirlik (a11y), form temelleri ve Lighthouse testleri |
-| **LAB-3** | `feature/responsive-layout` | Modern CSS, Responsive Layout (Flex/Grid), Design Tokens ve Akıcı Tipografi |
-
-## Özellikler
-
-### LAB-2 — Semantik HTML & Erişilebilirlik
-* **Semantik Yapı:** `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>` etiketlerinin doğru kullanımı.
-* **Erişilebilirlik:** Görünmez "Skip link" (Ana içeriğe atla) butonu, ARIA etiketleri (`aria-label`, `aria-describedby`), anlamlı `alt` metinleri.
-* **İletişim Formu:** HTML5 doğrulama, `fieldset/legend`, `label/for-id` bağlantıları.
-* **Heading Hiyerarşisi:** Sayfada tek `<h1>`, ana bölümler için `<h2>`, alt bölümler için `<h3>` kullanımı.
-
-### LAB-3 — Modern CSS & Responsive Layout
-* **Design Tokens:** `src/styles/tokens.css` içinde renk, spacing, radius ve font değişkenlerinin merkezi yönetimi.
-* **Fluid Typography:** `clamp()` fonksiyonu ile medya sorgusu gerektirmeyen sıvı/akıcı font boyutları.
-* **Flexbox Nav:** Mobile-First yaklaşımıyla dikey `flex-direction: column` menüden, ekran genişledikçe yatay `row` düzenine geçiş.
-* **CSS Grid:** `repeat(auto-fit, minmax(280px, 1fr))` kullanılarak medya sorgusuna gerek kalmadan ekran boyutuna göre otomatik dizilen (3->2->1) akıllı kart düzeni.
-* **3 Breakpoint:** Mobil (0–639px), Tablet (640px+), Masaüstü (1024px+). Tasarım kararları `CSS-KARARLARI.md` dosyasında belgelenmiştir.
-
-## Öne Çıkan Projelerim
-Portföyde detaylarına yer verilen başlıca akademik ve kişisel projelerim:
-* **BlockSentinelAI:** CAN-Bus ağlarındaki siber saldırıları tespit etmeye yönelik yapay zeka entegrasyonlu yazılım projesi.
-* **DreamToon:** Kullanıcıların rüyalarını yapay zeka destekli animasyonlara dönüştüren, Laravel ve Axios tabanlı web uygulaması.
-
-## Lighthouse Puanı (LAB-2)
-| Kategori | Puan | Tarih |
-| :--- | :--- | :--- |
-| ♿ Erişilebilirlik (Accessibility) | **100 / 100** ✅ | Şubat 2026 |
-| 🏆 En İyi Uygulamalar (Best Practices) | **100 / 100** ✅ | Şubat 2026 |
-
-## Ekran Görüntüleri (LAB-3)
-3 farklı cihaz boyutu için alınan render görüntüleri `screenshots/` klasöründe yer almaktadır.
-| Görünüm | Genişlik |
-| :--- | :--- |
-| 📱 Mobil | 375px |
-| 📟 Tablet | 768px |
-| 🖥️ Masaüstü | 1280px |
+Bu depo, "Web Tasarımı ve Programlama" dersi kapsamında adım adım (LAB-1, LAB-2, LAB-3) geliştirdiğim kişisel portfolyo projemi içermektedir. Vite ortamında sıfırdan inşa edilen bu site, modern web standartlarını (Semantik HTML, A11Y, Design Tokens, CSS Grid/Flex) merkeze alarak tasarlanmıştır.
 
 ---
-*Kariyerimin yanında edebiyat ve müzikle yakından ilgileniyorum. "Fecir Vakti" adında bir şiir kitabı hazırlığındayım ve Anadolu rock grubu **NEFRES**'in kurucu/yöneticisiyim.*
+
+## 🏗️ Geliştirme Süreci ve Branşlar (Lab Aşamaları)
+
+Proje, Git iş akışına uygun olarak farklı branch'ler (dallar) üzerinden aşama aşama inşa edilmiştir:
+
+* 🌱 **Faz 1 (`main`):** Vite altyapısının kurulması, proje mimarisinin oluşturulması ve temel dosyaların yapılandırılması.
+* ♿ **Faz 2 (`feature/semantic-html`):** İşin iskeleti. Sadece `<div>` kullanmak yerine `<main>`, `<article>`, `<nav>` gibi semantik HTML5 etiketleri entegre edildi. Ekran okuyucular için ARIA nitelikleri (`aria-label`, vb.), gizli "Skip link" (ana içeriğe atla) özelliği ve tam erişilebilir, erişim ağacı kusursuz form yapıları kuruldu. Lighthouse erişilebilirlik testlerinden %100 tam puan alındı.
+* 🎨 **Faz 3 (`feature/responsive-layout`):** Tasarımın canlanması. Herhangi bir hazır kütüphane kullanılmadan, saf CSS ile Mobile-First (Önce Mobil) yaklaşımı uygulandı. 
+
+## 🛠️ Mimari ve Teknik Yaklaşımlar
+
+Projenin arayüz mimarisi şu modern CSS prensiplerine dayanır:
+
+1.  **Design Tokens Modeli:** Renk paletleri, boşluk (spacing) skalaları, border-radius ve gölge değerleri `tokens.css` içerisinde CSS Variables (`--var`) olarak merkezi sisteme bağlandı.
+2.  **Akıcı Tipografi (Fluid Typography):** Cihaz boyutuna göre kendiliğinden büyüyüp küçülen `clamp()` fonksiyonları sayesinde media-query yazma zorunluluğu ortadan kaldırıldı.
+3.  **Akıllı Layout (Grid & Flexbox):** Menülerde `flex-direction` ile cihaz yönelimine göre esneyen yapılar kullanılırken, proje kartlarında `repeat(auto-fit, minmax(...))` formülüyle kendi kendini dizen akıllı Grid sistemi uygulandı.
+4.  **Responsive Strateji:** Mobil (0–639px), Tablet (640px+) ve Masaüstü (1024px+) olmak üzere 3 farklı kırılım noktası kullanıldı. Tasarım esnasında alınan tüm kritik kararlar `CSS-KARARLARI.md` dosyasında belgelendi. Uygulamanın farklı cihazlardaki görünümleri `screenshots/` klasörüne eklendi.
+
+---
+
+## 💻 Benim Dünyam: Öne Çıkan Projeler & Yetkinlikler
+
+Siber güvenlik, yapay zeka, gömülü sistemler ve web geliştirme ekseninde (C#, Python, Laravel, Axios, Arduino) teknolojiler üretiyorum. Üzerinde çalıştığım başlıca projelerim:
+
+* 🛡️ **BlockSentinelAI:** CAN-Bus ağlarındaki siber saldırıları tespit etmeye yönelik geliştirdiğim, yapay zeka entegrasyonlu siber güvenlik yazılımı.
+* 🌌 **DreamToon:** Kullanıcıların rüyalarını yapay zeka destekli animasyonlara dönüştüren yenilikçi web platformu.
+
+## 🎸 Kodların Ötesinde
+
+Sadece ekrana bakarak kod yazmıyor, sanatı da hayatımın bir parçası olarak görüyorum. Lise yıllarımdan bu yana kaleme aldığım şiirlerimi **"Fecir Vakti"** isimli kitabımda topluyorum. Ayrıca gümbür gümbür sahne alan Anadolu rock grubu **NEFRES**'in kurucusu ve yöneticisiyim. Müzik ve edebiyat, yazılım projelerime ilham vermeye devam ediyor.
