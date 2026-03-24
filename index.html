@@ -1,55 +1,133 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yusuf Mete Kaya - Kişisel Portfolyo</title>
-    <link rel="stylesheet" href="./src/styles/index.css">
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yusuf Mete | Tailwind v4 Portfolyo</title>
+    
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="bg-surface text-gray-900 transition-colors duration-300 dark:bg-gray-950 dark:text-white">
+    
+    <div class="min-h-screen p-8 max-w-7xl mx-auto">
+      
+      <header class="mb-12 border-b border-gray-200 pb-4 flex justify-between items-end dark:border-gray-700">
+        <div>
+          <h1 class="text-4xl font-bold text-primary dark:text-blue-400">Yusuf Mete | UI Kit</h1>
+          <p class="text-muted mt-2 dark:text-gray-400">Tailwind CSS v4 ile geliştirilmiş özel bileşen kütüphanesi.</p>
+        </div>
+        
+        <button onclick="document.documentElement.classList.toggle('dark')" class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg font-medium shadow-sm hover:scale-105 transition-transform cursor-pointer flex items-center gap-2">
+          <span class="dark:hidden">🌙 Karanlık Mod</span>
+          <span class="hidden dark:inline">☀️ Aydınlık Mod</span>
+        </button>
+      </header>
 
-    <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+      <section class="mb-8 space-y-6 bg-white p-6 rounded-xl shadow-sm border border-gray-100 dark:bg-gray-900 dark:border-gray-800">
+        <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 dark:text-gray-100">1. Buttons (Butonlar)</h2>
+        
+        <div>
+          <h3 class="text-sm font-medium text-gray-500 mb-3 uppercase tracking-wider dark:text-gray-400">Renk Varyantları</h3>
+          <div class="flex flex-wrap gap-4">
+            <button class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 focus:outline-none transition-all cursor-pointer">Primary</button>
+            <button class="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 focus:ring-2 focus:ring-secondary focus:ring-offset-2 dark:focus:ring-offset-gray-900 focus:outline-none transition-all cursor-pointer">Secondary</button>
+            <button class="bg-error text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 focus:ring-2 focus:ring-error focus:ring-offset-2 dark:focus:ring-offset-gray-900 focus:outline-none transition-all cursor-pointer">Danger</button>
+            <button class="bg-transparent text-muted hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-lg font-medium focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 dark:focus:ring-offset-gray-900 focus:outline-none transition-all cursor-pointer">Ghost</button>
+          </div>
+        </div>
 
-<header>
-    <div class="site-title">Yusuf Mete Kaya</div> <nav aria-label="Ana navigasyon">
-        <ul>
-            <li><a href="#hakkimda">Hakkımda</a></li>
-            <li><a href="#projeler">Projeler</a></li>
-            <li><a href="#iletisim">İletişim</a></li>
-        </ul>
-    </nav>
-</header>
+        <div class="pt-4">
+          <h3 class="text-sm font-medium text-gray-500 mb-3 uppercase tracking-wider dark:text-gray-400">Boyutlar & Durumlar</h3>
+          <div class="flex flex-wrap items-end gap-4">
+            <button class="bg-primary text-white px-3 py-1.5 text-sm rounded-lg font-medium hover:opacity-90 focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 focus:outline-none transition-all cursor-pointer">Small</button>
+            <button class="bg-primary text-white px-6 py-3 text-lg rounded-lg font-medium hover:opacity-90 focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 focus:outline-none transition-all cursor-pointer">Large</button>
+            <button disabled class="bg-gray-300 text-gray-500 dark:bg-gray-800 dark:text-gray-600 px-4 py-2 rounded-lg font-medium cursor-not-allowed opacity-70">Disabled</button>
+          </div>
+        </div>
+      </section>
 
-<main id="main-content">
-    <section id="hakkimda">
-        <h2>Hakkımda</h2>
-        <div class="about-content"> <figure>
-                <img src="profil.jpg" alt="Yusuf Mete Kaya'nın vesikalık fotoğrafı" />
-            </figure>
-            <div class="about-text">
-                <p>...</p>
-                <h3>Kullandığım Teknolojiler</h3>
-                <ul class="skill-tags"> <li>C#</li> <li>Python</li> <li>Laravel</li> <li>Axios</li> <li>Arduino</li>
-                </ul>
+      <section class="mb-8 space-y-6 bg-white p-6 rounded-xl shadow-sm border border-gray-100 dark:bg-gray-900 dark:border-gray-800">
+        <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 dark:text-gray-100">2. Inputs (Girdi Alanları)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300">Normal Input</label>
+            <input type="text" placeholder="Bir şeyler yazın..." class="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors">
+          </div>
+          
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300">Hatalı Input</label>
+            <input type="text" value="Yanlış format" class="w-full px-3 py-2 rounded-lg border border-error text-error dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-error transition-colors" aria-describedby="error-msg">
+            <p id="error-msg" class="text-sm text-error mt-1">Lütfen geçerli bir değer girin.</p>
+          </div>
+          
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300">Disabled Input</label>
+            <input type="text" value="Düzenlenemez" disabled class="w-full px-3 py-2 rounded-lg border border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed dark:border-gray-800 dark:bg-gray-800/50 dark:text-gray-600">
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-8 space-y-6 bg-white p-6 rounded-xl shadow-sm border border-gray-100 dark:bg-gray-900 dark:border-gray-800">
+        <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 dark:text-gray-100">3. Cards (Kartlar)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-shadow p-5">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Elevated Card</h3>
+            <p class="text-muted dark:text-gray-400 text-sm">Altındaki gölge ile sayfadan yükselmiş hissi verir. Odak çekmek için birebirdir.</p>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 p-5">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Outlined Card</h3>
+            <p class="text-muted dark:text-gray-400 text-sm">Sadece ince bir çerçeveye sahiptir. Temiz ve minimal tasarımlarda tercih edilir.</p>
+          </div>
+          
+          <div class="bg-surface dark:bg-gray-800/50 rounded-xl p-5">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Filled Card</h3>
+            <p class="text-muted dark:text-gray-400 text-sm">Arka plan rengiyle ayrışır. Formları veya alt grupları belirtmek için harikadır.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-8 space-y-6 bg-white p-6 rounded-xl shadow-sm border border-gray-100 dark:bg-gray-900 dark:border-gray-800">
+        <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 dark:text-gray-100">4. Alerts (Uyarılar)</h2>
+        <div class="space-y-4">
+          
+          <div role="alert" class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg dark:bg-blue-900/30">
+            <div class="flex">
+              <div class="flex-shrink-0"><span class="text-blue-500">ℹ️</span></div>
+              <div class="ml-3"><p class="text-sm text-blue-800 dark:text-blue-200 font-medium">Bilgi: Formunuz başarıyla taslağa kaydedildi.</p></div>
             </div>
+          </div>
+
+          <div role="alert" class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg dark:bg-green-900/30">
+            <div class="flex">
+              <div class="flex-shrink-0"><span class="text-green-500">✅</span></div>
+              <div class="ml-3"><p class="text-sm text-green-800 dark:text-green-200 font-medium">Başarılı: İşlem başarıyla tamamlandı!</p></div>
+            </div>
+          </div>
+
+          <div role="alert" class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg dark:bg-amber-900/30">
+            <div class="flex">
+              <div class="flex-shrink-0"><span class="text-amber-500">⚠️</span></div>
+              <div class="ml-3"><p class="text-sm text-amber-800 dark:text-amber-200 font-medium">Uyarı: Oturumunuz 5 dakika içinde sona erecek.</p></div>
+            </div>
+          </div>
+
+          <div role="alert" class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg flex justify-between items-start dark:bg-red-900/30">
+            <div class="flex">
+              <div class="flex-shrink-0"><span class="text-red-500">❌</span></div>
+              <div class="ml-3"><p class="text-sm text-red-800 dark:text-red-200 font-medium">Hata: Sunucu ile bağlantı kurulamadı.</p></div>
+            </div>
+            <button aria-label="Kapat" class="text-red-500 hover:text-red-700 font-bold px-2 cursor-pointer dark:text-red-300 dark:hover:text-red-100">&times;</button>
+          </div>
+
         </div>
-    </section>
+      </section>
+      
+    </div>
 
-    <section id="projeler">
-        <h2>Projelerim</h2>
-        <div class="project-grid"> <article class="project-card"> <h3>BlockSentinelAI</h3>
-                <p>...</p>
-            </article>
-            <article class="project-card">
-                <h3>DreamToon</h3>
-                <p>...</p>
-            </article>
-        </div>
-    </section>
-</main>
-
-    <footer>
-        <p>&copy; 2026 Yusuf Mete Kaya. Tüm hakları saklıdır.</p>
-    </footer>
-
-</body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
